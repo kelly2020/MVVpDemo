@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_scrollFlags ="scroll|enterAlways"
+            android:src="@mipmap/banner" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/coordinator_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorPrimary" />
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- viewpager 添加behavior 然后viewpager 关联的每个fragment 里面布局是recyclerview
+    的时候 滑动列表可以 使图片滑动
+    -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/coordinator_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>
