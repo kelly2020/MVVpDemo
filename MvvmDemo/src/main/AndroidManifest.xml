@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".UI.Activity.PlatteActivity">
+        <activity android:name=".UI.Activity.TabLayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

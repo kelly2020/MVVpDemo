@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.demo.wondersgroup.com.materialdesignprogressbar.MainActivity"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary" />
+
+
+        <!--使用库里面提供的炫酷水平进度条效果-->
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/progressbar_material_library"
+            style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:indeterminate="true"
+            android:visibility="visible"
+            app:mpb_progressStyle="horizontal"
+            app:mpb_showProgressBackground="false"
+            app:mpb_useIntrinsicPadding="false" />
+
+    </FrameLayout>
+
+    <!--android  系统自己sdk 下面的 水平进度条-->
+    <ProgressBar
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:indeterminate="true"
+        android:visibility="visible" />
+
+    <ProgressBar
+        style="?android:progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:indeterminate="true" />
+
+    <Button
+        android:id="@+id/button_stop_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop_progress_bar"
+        android:textAllCaps="false" />
+
+</LinearLayout>

@@ -13,23 +13,13 @@
             <option value="$PROJECT_DIR$/emotion" />
             <option value="$PROJECT_DIR$/emotiondemo" />
             <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/materialdesignprogressbar" />
             <option value="$PROJECT_DIR$/myapplication" />
             <option value="$PROJECT_DIR$/opennewappdemo" />
             <option value="$PROJECT_DIR$/sample" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/MvvmDemo" />
-            <option value="$PROJECT_DIR$/emotion" />
-            <option value="$PROJECT_DIR$/emotiondemo" />
-            <option value="$PROJECT_DIR$/library" />
-            <option value="$PROJECT_DIR$/myapplication" />
-            <option value="$PROJECT_DIR$/opennewappdemo" />
-            <option value="$PROJECT_DIR$/sample" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
