@@ -1,1 +1,1 @@
-include ':MvvmDemo', ':opennewappdemo', ':library', ':emotion', ':sample', ':myapplication', ':emotiondemo', ':materialdesignprogressbar', ':recyclerviewrefresh'
+include ':MvvmDemo', ':opennewappdemo', ':materialdesignprogressbar', ':recyclerviewrefresh'

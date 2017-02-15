@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import app.demo.wondersgroup.com.recyclerviewrefresh.R;
+import app.demo.wondersgroup.com.recyclerviewrefresh.activity.TabLayoutActivity;
 
 /**
  * Created by zhangwentao on 2017/2/13.
@@ -47,6 +48,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         public MyViewHolder(View itemView) {
             super(itemView);
             dataTextView = (TextView) itemView.findViewById(R.id.textview_recyclerview_item);
+
+            dataTextView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mContext.startActivity(TabLayoutActivity.getStartIntent(mContext));
+
+                }
+            });
         }
     }
 

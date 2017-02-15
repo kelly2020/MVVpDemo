@@ -1,4 +1,4 @@
-package app.demo.wondersgroup.com.recyclerviewrefresh;
+package app.demo.wondersgroup.com.recyclerviewrefresh.activity;
 
 import android.graphics.Color;
 import android.os.Handler;
@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.demo.wondersgroup.com.recyclerviewrefresh.R;
 import app.demo.wondersgroup.com.recyclerviewrefresh.adapter.RecyclerViewAdapter;
 import app.demo.wondersgroup.com.recyclerviewrefresh.view.LoadMoreRecyclerView;
 
@@ -83,7 +84,5 @@ public class MainActivity extends AppCompatActivity {
 
         adapter = new RecyclerViewAdapter(this, datas);
         mRecyclerView.setAdapter(adapter);
-
-//        mSwipeLayout.setRefreshing(true);
     }
 }

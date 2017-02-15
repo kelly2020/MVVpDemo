@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">RecyclerViewRefresh</string>
+
+
+    <array name="tabTitle">
+
+        <item >线性列表</item>
+        <item >表格列表</item>
+
+    </array>
 </resources>
