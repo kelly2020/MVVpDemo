@@ -77,6 +77,8 @@ public class ItemFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        addDatas();
         // Set the adapter
         Context context = view.getContext();
 

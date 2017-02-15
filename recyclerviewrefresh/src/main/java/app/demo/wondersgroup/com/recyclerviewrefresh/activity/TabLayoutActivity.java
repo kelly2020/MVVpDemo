@@ -22,6 +22,8 @@ import app.demo.wondersgroup.com.recyclerviewrefresh.fragment.dummy.DummyContent
 
 /**
  * Created by zhangwentao on 2017/2/14.
+ * tabLayout 结合fragment 实现fragment 中recyclerview 下拉刷新和上拉加载更多
+ * fragment 是添加系统的fragmnt
  */
 
 public class TabLayoutActivity extends AppCompatActivity implements ItemFragment.OnListFragmentInteractionListener {

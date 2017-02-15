@@ -15,6 +15,10 @@ import app.demo.wondersgroup.com.recyclerviewrefresh.R;
 import app.demo.wondersgroup.com.recyclerviewrefresh.adapter.RecyclerViewAdapter;
 import app.demo.wondersgroup.com.recyclerviewrefresh.view.LoadMoreRecyclerView;
 
+/**
+ * 添加了具有上拉加载更多功能的recyclerview
+ */
+
 public class MainActivity extends AppCompatActivity {
     private LoadMoreRecyclerView mRecyclerView;
     private SwipeRefreshLayout mSwipeLayout;
@@ -27,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        addDatas();
         initView();
         initListener();
     }
